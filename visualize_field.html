@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="Keywords" content="대전광역시, 서구" />
+        <meta name="Description" content="대전광역시, 서구" />
+        <meta name="Robots" content="All" />
+        <meta name="Date" content="2022-09-26+14:00" />
+        <meta http-equiv="Subject" content="대전시 서구" />
+        <meta http-equiv="Title" content="대전시 서구" />
+        <meta http-equiv="Author" content="JENNY" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="대전시 서구" />
+        <meta property="og:description" content="대전광역시, 서구" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <title>대전시 서구</title>
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./css/header.css" />
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+        <link rel="stylesheet" type="text/css" href="./css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="./css/setting.css" />
+        <link rel="stylesheet" type="text/css" href="./css/sub.css" />
+        <link rel="stylesheet" type="text/css" href="./css/visual.css" />
+
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="./swiper.js/swiper-bundle.min.js"></script>
+
+        <script src="./js/main.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header id="hd">
+            <div class="hd_wrap">
+                <div class="hd_container">
+                    <h1 class="logo">
+                        <a href="#"></a>
+                    </h1>
+                    <nav>
+                        <ul class="nav_cont">
+                            <li>
+                                <a href="#"> 데이터검색 </a>
+                                <ul class="depth_box">
+                                    <li>
+                                        <a href="#"> 데이터셋 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 오픈API </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> 데이터시각화 </a>
+                                <ul class="depth_box">
+                                    <li>
+                                        <a href="#"> 시설 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 사고 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> 지수시각화 </a>
+                                <ul class="depth_box">
+                                    <li>
+                                        <a href="#"> 안전시설 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"> 이용안내 </a>
+                                <ul class="depth_box">
+                                    <li>
+                                        <a href="#"> 공지사항 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mgr_bt">
+                        <a href="#"> 관리자 </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- MAIN-->
+        <main>
+            <!-- MAIN SECTION -->
+            <section class="visual_main">
+                <div>
+                    <div class="between_wrap">
+                        <!-- LEFT CONTS -->
+                        <div class="search_nav">
+                            <div class="search_btn">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="pg_btn active"> 폴리곤 검색 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dt_btn"> 데이터 검색 </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="visu_btn">안전지수시각화</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search_conts">
+                                <div id="polygonSearch" class="search_polygon">
+                                    <div class="search_title_box">
+                                        <h2 class="search_title icon01"><span>폴리곤</span>검색</h2>
+                                    </div>
+                                    <ul class="polygon_search">
+                                        <li>
+                                            <h3><span>인구선택</span></h3>
+                                            <div>
+                                                <input type="radio" id="none" name="population" value="NONE" />
+                                                <label for="none"> <span></span> 없음</label>
+                                                <input type="radio" id="resident" name="population" value="RESIDENT" />
+                                                <label for="resident"> <span></span> 주민등록인구</label>
+                                                <input type="radio" id="floating" name="population" value="FLOATING" />
+                                                <label for="floating"> <span></span> 유동인구</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3><span>성별선택</span></h3>
+                                            <div>
+                                                <select name="GENDER" id="gender">
+                                                    <option value="">전체</option>
+                                                    <option value="male">남자</option>
+                                                    <option value="female">여자</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3><span>동선택</span></h3>
+                                            <div>
+                                                <select name="GENDER" id="gender">
+                                                    <option value="">전체</option>
+                                                    <option value="male">남자</option>
+                                                    <option value="female">여자</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3><span>연령선택</span></h3>
+                                            <div>
+                                                <select name="GENDER" id="gender">
+                                                    <option value="">전체</option>
+                                                    <option value="male">남자</option>
+                                                    <option value="female">여자</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3><span>조회년월</span></h3>
+                                            <div class="select_flex">
+                                                <select name="GENDER" id="gender">
+                                                    <option value="">전체</option>
+                                                    <option value="male">남자</option>
+                                                    <option value="female">여자</option>
+                                                </select>
+                                                <select name="GENDER" id="gender">
+                                                    <option value="">전체</option>
+                                                    <option value="male">남자</option>
+                                                    <option value="female">여자</option>
+                                                </select>
+                                                <select name="GENDER" id="gender">
+                                                    <option value="">전체</option>
+                                                    <option value="male">남자</option>
+                                                    <option value="female">여자</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3><span>단계</span></h3>
+                                            <div>
+                                                <input type="radio" id="five_stage" name="stage" value="FIVE_STAGE" />
+                                                <label for="five_stage"> <span></span> 5단계</label>
+                                                <input type="radio" id="ten_stage" name="stage" value="TEN_STAGE" />
+                                                <label for="ten_stage"> <span></span> 10단계</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="visual_search_box">
+                                        <button class="visual_btn burgundy">검색</button>
+                                    </div>
+                                </div>
+                                <div id="dataSearch" class="search_data">
+                                    <div class="search_title_box">
+                                        <h2 class="search_title icon02"><span>데이터</span>검색</h2>
+                                    </div>
+                                    <div class="search_data_box">
+                                        <ul class="search_data_wrap">
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="fileopen_img"></div>
+                                                    <h3>데이터선택</h3>
+                                                </div>
+                                                <ul class="choice01">
+                                                    <li>
+                                                        <div class="arrow_img_flex">
+                                                            <div class="visual_arrow_img"></div>
+                                                            <div class="file_img_flex">
+                                                                <div class="file_img"></div>
+                                                                <h3>보건의료</h3>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="choice02">
+                                                            <li>
+                                                                <div class="arrow_img_flex">
+                                                                    <div class="visual_arrow_img"></div>
+                                                                    <div class="file_img_flex">
+                                                                        <div class="fileopen_img"></div>
+                                                                        <h3 class="file_active">생활방범CCTV</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="arrow_img_flex">
+                                                                    <div class="visual_arrow_img"></div>
+                                                                    <div class="file_img_flex">
+                                                                        <div class="file_img"></div>
+                                                                        <h3>안전비상벨 및 보안동</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="arrow_img_flex">
+                                                                    <div class="visual_arrow_img"></div>
+                                                                    <div class="file_img_flex">
+                                                                        <div class="file_img"></div>
+                                                                        <h3>보호구역 및 교육시설CCTV</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="arrow_img_flex">
+                                                                    <div class="visual_arrow_img"></div>
+                                                                    <div class="file_img_flex">
+                                                                        <div class="file_img"></div>
+                                                                        <h3>의료기관</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="arrow_img_flex">
+                                                                    <div class="visual_arrow_img"></div>
+                                                                    <div class="file_img_flex">
+                                                                        <div class="file_img"></div>
+                                                                        <h3>노후건물현황</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="file_img"></div>
+                                                    <h3>산업고용</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="file_img"></div>
+                                                    <h3>사회복지</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="file_img"></div>
+                                                    <h3>환경기상</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="file_img"></div>
+                                                    <h3>문화관광</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="file_img"></div>
+                                                    <h3>재난안전</h3>
+                                                </div>
+                                                <ul class="choice02">
+                                                    <li>
+                                                        <div class="arrow_img_flex">
+                                                            <div class="visual_arrow_img"></div>
+                                                            <div class="file_img_flex">
+                                                                <div class="file_img"></div>
+                                                                <h3>재난안전2레벨</h3>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="choice03">
+                                                            <li>
+                                                                <div class="arrow_img_flex">
+                                                                    <div class="visual_arrow_img"></div>
+                                                                    <div class="file_img_flex">
+                                                                        <div class="doc_img"></div>
+                                                                        <h3>재난안전3레벨</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="file_img_flex">
+                                                    <div class="file_img"></div>
+                                                    <h3>농축수산</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="visual_search_box data_search_wrap">
+                                        <ul class="polygon_search polygon02">
+                                            <li>
+                                                <h3><span>조회년월</span></h3>
+                                                <div>
+                                                    <select name="YEAR" id="year" class="twin_select">
+                                                        <option value="">년</option>
+                                                        <option value="2022year">2022년</option>
+                                                        <option value="2021year">2021년</option>
+                                                    </select>
+                                                    <select name="MONTH" id="month">
+                                                        <option value="">월</option>
+                                                        <option value="">01월</option>
+                                                        <option value="">02월</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h3><span>행정동</span></h3>
+                                                <div>
+                                                    <select name="ADMINISTRATIVE" id="administrative">
+                                                        <option value="">전체</option>
+                                                        <option value=""></option>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <button class="visual_btn burgundy">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LEFT CONTS END -->
+
+                        <!-- RIGHTS CONTS -->
+                        <div class="year_box">
+                            <ul>
+                                <li class="home home01">30년 이상</li>
+                                <li class="home home02">40년 이상</li>
+                                <li class="home home03">50년 이상</li>
+                            </ul>
+                        </div>
+                        <div class="resident">
+                            <div class="res_title">
+                                <h2>주민등록인구</h2>
+                            </div>
+                            <div class="res_conts">
+                                <div class="res_radio">
+                                    <div>
+                                        <input type="radio" id="res_five_stage" name="res_stage" value="RES_FIVE_STAGE" checked />
+                                        <label for="res_five_stage"> <span></span> 5단계</label>
+                                        <input type="radio" id="res_ten_stage" name="res_stage" value="RES_TEN_STAGE" />
+                                        <label for="res_ten_stage"> <span></span> 10단계</label>
+                                    </div>
+                                </div>
+                                <ul class="fiveStage">
+                                    <li>
+                                        <div class="num">1</div>
+                                        <div class="num_txt">단계 &#91;1만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">2</div>
+                                        <div class="num_txt">단계 &#91;2만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">3</div>
+                                        <div class="num_txt">단계 &#91;3만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">4</div>
+                                        <div class="num_txt">단계 &#91;2만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">5</div>
+                                        <div class="num_txt">단계 &#91;4만 <span class="txt_green">초과</span>&#93;</div>
+                                    </li>
+                                </ul>
+                                <ul class="tenStage">
+                                    <li>
+                                        <div class="num">1</div>
+                                        <div class="num_txt">단계 &#91;5천 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">2</div>
+                                        <div class="num_txt">단계 &#91;1만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">3</div>
+                                        <div class="num_txt">단계 &#91;1만 5천 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">4</div>
+                                        <div class="num_txt">단계 &#91;2만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">5</div>
+                                        <div class="num_txt">단계 &#91;2만 5천 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">6</div>
+                                        <div class="num_txt">단계 &#91;3만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">7</div>
+                                        <div class="num_txt">단계 &#91;3만 5천 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">8</div>
+                                        <div class="num_txt">단계 &#91;4만 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">9</div>
+                                        <div class="num_txt">단계 &#91;4만 5천 <span class="txt_yellow">이하</span>&#93;</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">10</div>
+                                        <div class="num_txt">단계 &#91;4만 5천 <span class="txt_green">초과</span>&#93;</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHTS CONTS END -->
+
+                    <!-- GRAPH AREA -->
+
+                    <div class="graph_box">
+                        <div class="graph_box_arrow_show">
+                            <div class="arrow_show"></div>
+                        </div>
+                        <div class="graph_conts">
+                            <ul>
+                                <li>
+                                    <div class="graph_area area01">
+                                        <div class="graph_title border_center ml">
+                                            <h3>동별 <span>CCTV현황</span></h3>
+                                            <p>
+                                                <a href="#">다운로드</a>
+                                            </p>
+                                        </div>
+                                        <div class="graph_img_box">
+                                            <div class="graph_img graph01"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph_area">
+                                        <div class="graph_title">
+                                            <h3>동별 <span>CCTV현황</span></h3>
+                                            <p>
+                                                <a href="#">다운로드</a>
+                                            </p>
+                                        </div>
+                                        <div class="graph_img_box">
+                                            <div class="graph_img graph02"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="graph_area area01">
+                                        <div class="graph_title border_center ml">
+                                            <h3>동별 <span>CCTV현황</span></h3>
+                                            <p>
+                                                <a href="#">다운로드</a>
+                                            </p>
+                                        </div>
+                                        <div class="graph_img_box">
+                                            <div class="graph_img graph03"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph_area">
+                                        <div class="graph_title">
+                                            <h3>동별 <span>CCTV현황</span></h3>
+                                            <p>
+                                                <a href="#">다운로드</a>
+                                            </p>
+                                        </div>
+                                        <div class="graph_img_box">
+                                            <div class="graph_img graph04"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="graph_area area01">
+                                        <div class="graph_title border_center ml">
+                                            <h3>동별 <span>CCTV현황</span></h3>
+                                            <p>
+                                                <a href="#">다운로드</a>
+                                            </p>
+                                        </div>
+                                        <div class="graph_img_box border_l">
+                                            <div class="graph_img graph03"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph_area">
+                                        <div class="graph_title">
+                                            <h3>동별 <span>CCTV현황</span></h3>
+                                            <p>
+                                                <a href="#">다운로드</a>
+                                            </p>
+                                        </div>
+                                        <div class="graph_img_box">
+                                            <div class="graph_img graph04"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- GRAPH AREA END -->
+                </div>
+            </section>
+            <!-- MAIN SECTION END -->
+        </main>
+        <!-- MAIN END -->
+    </body>
+</html>

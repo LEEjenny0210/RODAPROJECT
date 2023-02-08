@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Keywords" content="대전광역시, 서구" />
+    <meta name="Description" content="대전광역시, 서구" />
+    <meta name="Robots" content="All" />
+    <meta name="Date" content="2022-09-26+14:00" />
+    <meta http-equiv="Subject" content="대전시 서구" />
+    <meta http-equiv="Title" content="대전시 서구" />
+    <meta http-equiv="Author" content="JENNY" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="대전시 서구">
+    <meta property="og:description" content="대전광역시, 서구">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>대전시 서구</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/setting.css">
+    <link rel="stylesheet" type="text/css" href="./css/sub.css">
+
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./swiper.js/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="hd">
+        <div class="hd_wrap">
+            <div class="hd_container">
+                <h1 class="logo">
+                    <a href="#"></a>
+                </h1>
+                <nav>
+                    <ul class="nav_cont">
+                        <li>
+                            <a href="#">
+                                데이터검색
+                            </a>
+                            <ul class="depth_box">
+                                <li>
+                                    <a href="#">
+                                        데이터셋
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        오픈API
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                데이터시각화
+                            </a>
+                            <ul class="depth_box">
+                                <li>
+                                    <a href="#">
+                                        시설
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        사고
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                지수시각화
+                            </a>
+                            <ul class="depth_box">
+                                <li>
+                                    <a href="#">
+                                        안전시설
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                이용안내
+                            </a>
+                            <ul class="depth_box">
+                                <li>
+                                    <a href="#">
+                                        공지사항
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mgr_bt">
+                    <a href="#">
+                        관리자
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN-->
+    <main>
+        <!-- MAIN SECTION -->
+        <section class="sub_main">
+            <h2>
+                서구 데이터 포털
+            </h2>
+        </section>
+        <!-- MAIN SECTION END-->
+        <!-- SUB CONTENTS SECTION -->
+        <section class="sub_contents">
+            <div class="sub_title">
+                <h2>
+                    데이터셋
+                </h2>
+            </div>
+            <div class="container">
+                <div class="data_conts_box">
+                    <!-- DATA LEFT -->
+                    <div class="data_conts">
+                        <h2 class="data_title">
+                            데이터셋 목록
+                        </h2>
+
+                        <div class="data_search_box">
+                            <form name='searchFrom' method='post' onsubmit="return false;">
+                                <input type="hidden" name="serachDstmPk" id="serachDstmPk"
+                                    value="${param.serachDstmPk}"> <!-- 메인에서 넘겨받은 테마pk를 저장할 태그 -->
+                                <input type="text" class="in-srh" name="searchText" id="searchText" placeholder="검색어">
+                                <a href="#" class="btn-submit" id="search_btn"><span class="sound-only">검색</span></a>
+                            </form>
+                        </div>
+
+                        <div class="data_table">
+                            <div class="table_title">제목</div>
+                        </div>
+                    </div>
+                    <!-- DATA LEFT END -->
+                    <!-- DATA RIGHT -->
+                    <div class="data_detail">
+                        <div class="detail01">
+                            <h2 class="data_title">
+                                데이터셋 내용
+                            </h2>
+                            <div class="dataset_conts">
+                                <ul class="detail_table active">
+                                    <li>
+                                        <div class="li_flex data_li">
+                                            <h3>데이터셋 명</h3>
+                                            <div>
+                                                <p> 대전광역시 서구 안전비상벨 현황</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li_flex data_li">
+                                            <h3> 설명</h3>
+                                            <div>
+                                                <p>
+                                                    대전광역시 서구 안전비상벨 현황 정보를
+                                                    조회한다dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                갱신주기
+                                            </h3>
+                                            <div>
+                                                <p> 년</p>
+                                            </div>
+                                        </div>
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                분류
+                                            </h3>
+                                            <div>
+                                                <p>공공행정</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                출저
+                                            </h3>
+                                            <div>
+                                                <p>대전광역시 서구 안전비상벨 현황 정보를 조회한다</p>
+                                            </div>
+                                        </div>
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                제공기관
+                                            </h3>
+                                            <div>
+                                                <p>대전광역시 서구</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="flex">
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                대이터 갱신일
+                                            </h3>
+                                            <div>
+                                                <p>2022-12-10</p>
+                                            </div>
+                                        </div>
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                키워드
+                                            </h3>
+                                            <div>
+                                                <p>안전, 안전비상벨, 서구, 대전, 키워드</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li_flex data_li">
+                                            <h3>
+                                                다운로드
+                                            </h3>
+                                            <div>
+                                                <p>
+                                                    <a href="#">수집데이터 컬럼 목록.xlsx</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail02">
+                            <h2 class="data_title">
+                                데이터셋 내용
+                            </h2>
+
+                            <div class="detail_table active dataset">
+                                <table class="table_head">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                순번
+                                            </td>
+                                            <td>
+                                                데이터셋 이름
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                            <td>
+                                                도로명 주소
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="data_set_conts">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>서구청 1호기(서구청 본관 로비)</td>
+                                            <td>인천광역시 서구 서곶로 307</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>서구청 2호기(서구청 본관 로비)</td>
+                                            <td>인천광역시 서구 봉수대로 158</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>검단출장소(외부부스)</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>가좌2동 우체국(ATM창구 좌폭)</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>서구청 1호기(서구청 본관 로비)</td>
+                                            <td>인천광역시 서구 서곶로 307</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>서구청 1호기(서구청 본관 로비)</td>
+                                            <td>인천광역시 서구 서곶로 307</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>서구청 1호기(서구청 본관 로비)</td>
+                                            <td>인천광역시 서구 서곶로 307</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>가좌2동 우체국(ATM창구 좌폭)</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>가좌2동 우체국(ATM창구 좌폭)</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>가좌2동 우체국(ATM창구 좌폭)</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                            <td>인천광역시 서구 검바위로 26</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DATA RIGHT END -->
+                </div>
+            </div>
+        </section>
+        <!-- SUB CONTENTS SECTION END-->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="ft_box">
+                <div class="ft_logo">
+                    <a href="#"></a>
+                </div>
+                <div class="ft_conts">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                이용약관
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                저작권정책
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                이메일주소무단수집거부
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        대표전화 : 042)288-2114 / 팩스 : 042)288-5900 <br>
+                        (35328) 대전광역시 서구 둔산서로 100(둔산동)
+                    </div>
+                    <p>Copyright &copy; 2020 Seo-gu Office.All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END  -->
+
+</body>
+
+</html>

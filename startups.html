@@ -1,0 +1,229 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Keywords" content="대전광역시, 서구" />
+    <meta name="Description" content="대전광역시, 서구" />
+    <meta name="Robots" content="All" />
+    <meta name="Date" content="2022-09-26+14:00" />
+    <meta http-equiv="Subject" content="대전시 서구" />
+    <meta http-equiv="Title" content="대전시 서구" />
+    <meta http-equiv="Author" content="JENNY" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="대전시 서구">
+    <meta property="og:description" content="대전광역시, 서구">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>대전시 서구</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_start.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/setting.css">
+    <link rel="stylesheet" type="text/css" href="./css/startup.css">
+    <link rel="stylesheet" type="text/css" href="./css/chart.css">
+
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./swiper.js/swiper-bundle.min.js"></script>
+    <!--AMCHART-->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="./js/chart.js"></script>
+
+    <script src="./js/main.js"></script>
+    
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="hd">
+        <div class="hd_wrap">
+            <div class="hd_container">
+                <h1 class="logo">
+                    <a href="#"></a>
+                </h1>
+                <nav>
+                    <ul class="nav_cont">
+                        <li>
+                            <a href="#">
+                                상권별 분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                행정동별 분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                오픈API 검색
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mgr_bt">
+                    <a href="#">
+                        서구데이터
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- MAIN-->
+    <main>
+        <!-- START_MAIN  -->
+        <section class="start_main">
+            <div class="container">
+                <h3>
+                    새롭게 시작한 서구청 <strong>상권분석서비스</stro>
+                </h3>
+                <h2>
+                    간편하고 한눈에 볼 수 있는<br>
+                    <strong>창업지원 서비스</stro>
+                </h2>
+            </div>
+        </section>
+        <!-- START_MAIN  END -->
+        <!-- START_SEC -->
+        <section class="start_sec">
+            <div class="container">
+                <div class="service_menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="service_img img01"></div>
+                                <strong>상권별</strong>
+                                분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="service_img img02"></div>
+                                <strong>행정동별</strong>
+                                분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="service_img  img03"></div>
+                                <strong>OPEN API</strong>
+                                검색
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- START_SEC END  -->
+        <!-- START_THIRD -->
+        <section class="start_third">
+            <div class="container">
+                <h2>
+                    서구청 <strong>상권현황</strong>
+                </h2>
+                <ul class="chart">
+                    <li>
+                        <h3>인허가업소현황</h3>
+                        <div id="chartdiv"></div>
+                    </li>
+                    <li>
+                        <h3>유동/주민인구현황</h3>
+                        <div id="chartdiv02"></div>
+                        <p>
+                            전체:100%
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="color_box color01"></div>
+                                서구:35%
+                            </li>
+                                <div class="color_box color02"></div>
+                                중구:20%
+                            </li>
+                            <li>
+                                <div class="color_box color03"></div>
+                                대덕구:10%
+                            </li>
+                            <li>
+                                <div class="color_box color04"></div>
+                                유성구:25%
+                            </li>
+                            <li>
+                                <div class="color_box color05"></div>
+                                동구:15%
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>유동/주민인구현황</h3>
+                        <div id="chartdiv03"></div>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+        <!-- START_THIRD END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="ft_box">
+                <div class="ft_logo">
+                    <a href=""></a>
+                </div>
+                <div class="ft_conts">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                이용약관
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                저작권정책
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                이메일주소무단수집거부
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        대표전화 : 042)288-2114 / 팩스 : 042)288-5900 <br>
+                        (35328) 대전광역시 서구 둔산서로 100(둔산동)
+                    </div>
+                    <p>Copyright &copy; 2020 Seo-gu Office.All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END  -->
+</body>
+
+</html>
