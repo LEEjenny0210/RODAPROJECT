@@ -1,0 +1,111 @@
+footer {
+    background-color: #1C2431;
+    padding: 40px 0;
+}
+
+.ft_box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.ft_logo {
+    width: 218px;
+    height: 58px;
+    margin-right: 150px;
+}
+
+.ft_logo a {
+    background-image: url(../image/footer_logo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.ft_conts ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ft_conts ul li {
+    margin-right: 20px;
+}
+
+.ft_conts ul li a {
+    color: #999999;
+    font-size: 0.875rem;
+    letter-spacing: -.5px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.ft_conts ul li a::after {
+    content: "";
+    border-right: 1px solid #767676;
+    padding-left: 20px;
+    display: inline;
+    height: 10px;
+}
+
+.ft_conts ul li a:hover {
+    color: #5CB531;
+}
+
+.ft_conts ul li:last-of-type a::after {
+    border: none;
+}
+
+.ft_conts ul li:nth-child(1) a {
+    color: #FFD84D;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+.ft_conts ul li:nth-child(1) a:hover {
+    color: #5CB531;
+}
+
+.ft_conts div {
+    margin-top: 20px;
+    color: #999;
+    font-size: 0.9375rem;
+    letter-spacing: -.5px;
+}
+
+.ft_conts p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 0.9375rem;
+    letter-spacing: -.5px;
+}
