@@ -1,0 +1,210 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="/common/taglib.jsp"%>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/roda/img/favicon-16x16.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="언제나 로다가 함께하겠습니다." />
+    <meta name="Robots" content="All" />
+    <meta name="Date" content="2022-12-22+14:00" />
+    <meta http-equiv="Author" content="JENNY" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RODA">
+    <meta property="og:description" content="언제나 로다가 함께하겠습니다.">
+    <meta property="og:image" content="../img/thumbnail.png">
+    <meta property="og:url" content="http://rodait.com/">
+    <title>RODA</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/roda/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/roda/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/roda/css/loading.css">
+    <link rel="stylesheet" type="text/css" href="/roda/css/sub.css">
+    <link rel="stylesheet" type="text/css" href="/roda/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/roda/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/roda/css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- JS -->
+    <script src="/roda/js/rdit-navigation-1.0.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/roda/js/main.js"></script>
+
+    <script type="text/javascript">
+	    $( document ).ready(function() {
+	    	$('#scroll').hide(); 
+	    });
+    </script>
+</head>
+
+<body>
+    <form id="mainFrm" name="mainFrm" method="post">
+        <!-- HEADER SECTION -->
+        <jsp:include page="../cmmn/header.jsp" flush="false" />
+        <!-- HEADER SECTION END -->
+        <main>
+            <!-- FIRTST SECTION -->
+            <section class="sub02_main">
+                <div class="container">
+                    <h2>
+                        <span>OUR</span> Works
+                    </h2>
+                </div>
+            </section>
+            <!-- FIRTST SECTION END -->
+
+            <!-- SECOND SECTION -->
+            <section class="sub02_sec">
+                <div class="container">
+                    <div class="title_flex">
+                        <h3>
+                            EXPERIENCE
+                        </h3>
+                        <div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper works_swiper">
+                    <div class="swiper-wrapper">
+                    	<c:forEach items="${experienceLst}" var="experience" varStatus="status">        
+                    		<c:if test="${experience.prjct_public_yn eq 'Y' }">
+		                        <div class="swiper-slide">                            
+		                            	<c:forEach items="${experienceImageFileLst}" var="experienceImageFile" varStatus="statusImageFile">
+	                                   		<c:if test="${experience.board_cd eq experienceImageFile.board_cd && experience.prjct_no eq experienceImageFile.post_no }">
+	                                   			<img src="${experienceImageFile.fiel_cours}${experienceImageFile.strg_file_nm }" alt="${experienceImageFile.file_desc }">
+	                                   		</c:if>
+	                                   	</c:forEach>	 	               
+	                                   	<div class="swiper_hover">
+	                                   		<h3>
+		                                        ${experience.prjct_nm }
+		                                    </h3>	   
+		                                	<ul>                                  
+	                                    		<c:forEach items="${experienceActionMdulLst}" var="experienceActionMdul" varStatus="statusActionMdul">
+	                                    			<c:if test="${experience.board_cd eq experienceActionMdul.board_cd && experience.prjct_no eq experienceActionMdul.prjct_no }">
+	                                    				<li>${experienceActionMdul.prjct_action_mdul_nm }</li>
+	                                    			</c:if>
+	                                    		</c:forEach>	   	                                        	                                    
+		                                	</ul>
+		                             	</div>     
+		                        </div>
+		                   </c:if>
+	                    </c:forEach>                        
+                    </div>
+                </div>
+            </section>
+            <!-- SECOND SECTION END -->
+
+            <!-- THIRD SECTION -->
+            <section class="sub02_third">
+                <div>
+                    <h3 class="container">
+                        INTERNAL
+                    </h3>
+                    <div class="inter_conts">
+                        <ul class="inter_wrap">
+                        	
+                        	<c:forEach items="${experienceLst}" var="experience" varStatus="status">            
+<%--                         		<c:if test="${experience.prjct_public_yn eq 'N' }">            		 --%>
+	                        		<li>
+		                                <div class="inter_title_flex container">
+		                                    <div class="inter_flex">
+		                                        <p class="situation">
+		                                            
+		                                            <c:forEach items="${experienceProgressInfoLst}" var="experienceProgressInfo" varStatus="statusProgressInfo">
+			                                    		<c:if test="${experience.board_cd eq experienceProgressInfo.board_cd && experience.prjct_no eq experienceProgressInfo.prjct_no }">
+			                                    			&#91;${experienceProgressInfo.prjct_progress_nm }&#93;
+			                                    		</c:if>
+			                                    	</c:forEach>	    
+		                                            
+		                                        </p>
+		                                        <p class="inter_title">
+		                                            ${experience.prjct_nm }
+		                                        </p>
+		                                    </div>
+		                                    <ul class="mdul">	                                        	
+		                                        <c:forEach items="${experienceActionMdulLst}" var="experienceActionMdul" varStatus="statusActionMdul">
+			                                    		<c:if test="${experience.board_cd eq experienceActionMdul.board_cd && experience.prjct_no eq experienceActionMdul.prjct_no }">
+			                                    			<li>${experienceActionMdul.prjct_action_mdul_nm }</li>
+			                                    		</c:if>
+			                                    </c:forEach>	      	                                            
+		                                    </ul>
+		                                </div>
+		                                <div class="date_flex container">
+		                                    <p class="date">
+		                                        ${experience.prjct_start_dt } ~ ${experience.prjct_end_dt }
+		                                    </p>
+		                                    <ul class="sub_category">
+		                                    	<c:forEach items="${experienceBusinessLst}" var="experienceBusiness" varStatus="statusBusiness">
+		                                    		<c:if test="${experience.board_cd eq experienceBusiness.board_cd && experience.prjct_no eq experienceBusiness.prjct_no }">
+		                                    			<li>${experienceBusiness.prjct_business_nm }</li>
+		                                    		</c:if>
+		                                    	</c:forEach>	                                        
+		                                    </ul>
+		                                </div>
+		                            </li>	
+<%-- 		                    	</c:if>							 --%>
+                        	</c:forEach>        
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- THIRD SECTION END -->
+
+            <!-- FOURTH SECTION -->
+            <section class="sub02_fourth">
+                <div class="container">
+                    <div class="inquiry_flex">
+                        <div class="inquiry">
+                            <h2>
+                                Would you like to join us?
+                            </h2>
+                            <h3>
+                                <a href="/rodaContact.rd">프로젝트 문의하기</a>
+                            </h3>
+                        </div>
+                        <div class="rota">
+                            <div class="rotation_img"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FOURTH SECTION END-->
+            
+                	
+       	 <!-- SCROLL DOWN -->
+        <div class="scroll_btn_box">
+            <div id="scroll" class="scroll_txt">
+            </div>
+        </div>
+        <!-- SCROLL DOWN END -->
+        
+
+            <!-- FOOTER -->
+            <jsp:include page="../cmmn/footer.jsp" flush="false" />
+            <!-- FOOTER END -->
+        </main>
+    </form>
+</body>
+
+</html>

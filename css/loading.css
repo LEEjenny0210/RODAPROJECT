@@ -1,0 +1,40 @@
+/* loading */
+.loading {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 999;
+}
+
+.loading_title_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.loading_title_box h2 {
+    font-size: 25rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #000;
+}
+/* loading END */

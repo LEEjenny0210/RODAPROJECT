@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Pretendard', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    /*스크롤바의 너비*/
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #C82F8B;
+    /*스크롤바의 색상*/
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000;
+    /*스크롤바 트랙 색상*/
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+button {
+    background: inherit;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    margin: 0 auto;
+    width: auto;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9375rem;
+    letter-spacing: -.5px;
+    color: #858585;
+    cursor: pointer;
+}
+
+table tbody tr.tr_active,
+table tbody tr:hover {
+    background-color: #ebebeb;
+}

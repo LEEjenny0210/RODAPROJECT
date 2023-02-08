@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="언제나 로다가 함께하겠습니다." />
+    <meta name="Robots" content="All" />
+    <meta name="Date" content="2022-12-22+14:00" />
+    <meta http-equiv="Author" content="JENNY" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RODA">
+    <meta property="og:description" content="언제나 로다가 함께하겠습니다.">
+    <meta property="og:image" content="../img/thumbnail.png">
+    <meta property="og:url" content="http://rodait.com/">
+    <title>RODA</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/header_manager.css">
+    <link rel="stylesheet" type="text/css" href="/css/manager.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JS -->
+    <script src="/js/manager.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER SECTION  -->
+        <header>
+            <div class="logo_wrap">
+                <div class="menu_logo">
+                    <a href="#"></a>
+                </div>
+                <div class="log">
+                    <a href="#">
+                        로그아웃
+                    </a>
+                </div>
+            </div>
+            <nav class="nav_bar">
+                <ul class="menu_01">
+                    <li class="nav_item">
+                        <p class="nav_txt">
+                            <a href="#">
+                                코드관리
+                            </a>
+                        </p>
+                    </li>
+                    <li class="nav_item nav_active">
+                        <p class="nav_txt">
+                            <a href="#">
+                                연혁관리
+                            </a>
+                        </p>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">
+                            <a href="#">
+                                EXPERIENCE 관리
+                            </a>
+                        </p>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">
+                            <a href="#">
+                                커뮤니티
+                            </a>
+                        </p>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">
+                            <a href="#">
+                                컨텍트
+                            </a>
+                        </p>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">
+                            <a href="#">
+                                개인정보 동의
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- HEADER SECTION END -->
+        <section>
+            <div class="section_wrap">
+                <div class="main_contents">
+                    <div class="contents_wrap">
+                        <div class="contents_title">
+                            <h2>
+                                EXPERIENCE 관리
+                            </h2>
+                            <ul>
+                                <li>
+                                    관리자
+                                </li>
+                                <li>
+                                    EXPERIENCE 관리
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contents">
+                            <div class="conts_title">
+                                <h2>
+                                    EXPERIENCE 상세정보
+                                </h2>
+                            </div>
+                            <ul class="detail_ul">
+                                <li class="w_full">
+                                    <div class="ep_title">
+                                        <h3>제목</h3>
+                                    </div>
+                                    <div class="ep_conts">
+                                        <input type="text" placeholder="연구계획관리기능 개선을 위한 통합연구개발정보체계 고도화">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ep_title">
+                                        <h3>프로젝트 날짜</h3>
+                                    </div>
+                                    <div class="ep_conts input_date">
+                                        <input type="date">
+                                        <p>~</p>
+                                        <input type="date">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ep_title">
+                                        <h3>진행현황</h3>
+                                    </div>
+                                    <div class="ep_conts">
+                                        <select name="progress" id="projectProgress">
+                                            <option value="전체">전체</option>
+                                            <option value="진행중">진행중</option>
+                                            <option value="완료">완료</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ep_title">
+                                        <h3>주관사</h3>
+                                    </div>
+                                    <div class="ep_conts">
+                                        <select name="subjective" id="subJective">
+                                            <option value="대전광역시">대전광역시</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ep_title">
+                                        <h3>공개여부</h3>
+                                    </div>
+                                    <div class="ep_conts">
+                                        <select name="disclosure" id="disClosure">
+                                            <option value="Y">Y</option>
+                                            <option value="N">N</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ep_title hh_title">
+                                        <h3>프로젝트 사업분야</h3>
+                                    </div>
+                                    <div class="ep_conts input_check">
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="si">
+                                            <label for="si">System Integration</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="sm">
+                                            <label for="sm">System Maintenance</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="bd">
+                                            <label for="bd">BigData & Data</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="da">
+                                            <label for="da">Data analysis</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="cs">
+                                            <label for="cs">Consulting</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="dv">
+                                            <label for="dv">Data visualization</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="sd">
+                                            <label for="sd">Solution & Development</label>
+                                        </div>
+                                        <div class="ck_box">
+                                            <input type="checkbox" id="os">
+                                            <label for="os">Outsourcing</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="ep_title hh_title">
+                                        <h3>프로젝트 실행모듈</h3>
+                                    </div>
+                                    <div class="ep_conts input_check">
+                                        <div class="ck_box module">
+                                            <input type="checkbox" id="web">
+                                            <label for="web">Web</label>
+                                        </div>
+                                        <div class="ck_box module">
+                                            <input type="checkbox" id="mobile">
+                                            <label for="mobile">Mobile</label>
+                                        </div>
+                                        <div class="ck_box module">
+                                            <input type="checkbox" id="data">
+                                            <label for="data">Data</label>
+                                        </div>
+                                        <div class="ck_box module">
+                                            <input type="checkbox" id="document">
+                                            <label for="document">Document</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w_full">
+                                    <div class="ep_title pj_title">
+                                        <h3>프로젝트 내용</h3>
+                                    </div>
+                                    <div class="ep_conts">
+                                        <textarea name="projectconts" id="projectConts" cols="30" rows="15"></textarea>
+                                    </div>
+                                </li>
+                                <li class="w_full">
+                                    <div class="ep_title img_title">
+                                        <h3>프로젝트 이미지</h3>
+                                    </div>
+                                    <div class="ep_conts">
+                                        <input type="file" id="img_select">
+                                        <img src="" id="preview">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="button_box detail_btn">
+                            <button class="modify">수정</button>
+                            <button class="cancellation">취소</button>
+                            <button class="registration">저장</button>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------- contents::end --------------------------->
+            </div>
+            <!-- FOOTER -->
+            <footer>
+                <div class="footer_wrap">
+                    <div class="md_hidden">
+                        &copy; RODAIT.All Rights Reserved
+                    </div>
+                    <ul>
+                        <li>
+                            <p>OFFICE</p>
+                            대전광역시 서구 배재로128<br>
+                            로다빌딩 2~4F
+                        </li>
+                        <li>
+                            <p>TEL</p>
+                            +82.042.710.6367
+                        </li>
+                        <li>
+                            <p>E-MAIL</p>
+                            <a href="mailto:rodait@rodait.com">rodait&#64;rodait.com</a>
+                        </li>
+                        <li>
+                            <p>FAX</p>
+                            +82.042.367.6367
+                        </li>
+                        <li>
+                            <a href="#">LOGIN</a>
+                        </li>
+                    </ul>
+                    <div class="sm_block">
+                        &copy; RODAIT.All Rights Reserved
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RODA</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/sub.css">
+    <link rel="stylesheet" type="text/css" href="/css/loading.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SCROLL -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header id="hd">
+        <div class="header_wrap">
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <div class="menu_title menu">
+                <a href="#">
+                    MENU
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="menu_box">
+        <div class="menu_box_wrap">
+            <div class="menu_title close">
+                <a href="#">
+                    CLOSE
+                </a>
+            </div>
+            <div class="menu_conts">
+                <ul class="menu_name">
+                    <li>
+                        <a href="sub01.html" class="menu_active">
+                            RODA's STORY
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub02.html">
+                            RODA's EXPERIENCE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            COMMUNITY
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+                <ul class="info">
+                    <li>
+                        <p>OFFICE</p>
+                        <h4>
+                            대전광역시 서구 배재로128<br>
+                            로다빌딩 3~4F
+                        </h4>
+                    </li>
+                    <li>
+                        <p>TEL</p>
+                        <h4>
+                            +82.042.710.6367
+                        </h4>
+                    </li>
+                    <li>
+                        <p>FAX</p>
+                        <h4>
+                            +82.042.367.6367
+                        </h4>
+                    </li>
+                    <li>
+                        <p>E-MAIL</p>
+                        <h4>
+                            rodait@rodait.com
+                        </h4>
+                    </li>
+                    <li>
+                        Application
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER SECTION END -->
+    <main>
+        <!-- FIRTST SECTION -->
+        <section class="sub03_main sub04">
+            <div class="container">
+                <h2>
+                    CONTACT
+                </h2>
+            </div>
+        </section>
+        <!-- FIRTST SECTION END -->
+
+        <!-- SECOND SECTION -->
+        <section class="sub04_sec">
+            <div class="container">
+                <div class="sub04_title">
+                    <h2>
+                        What kind of project do you want?
+                    </h2>
+                    <h3>
+                        함께하면 더 멀리, 더 높이 갈 수 있습니다.
+                    </h3>
+                </div>
+                <form action="">
+                    <div class="form_wrap">
+                        <ul>
+                            <li>
+                                <div class="input_flex">
+                                    <div class="form_group field">
+                                        <input required="" placeholder="Company Name" class="form_field" type="input">
+                                        <label class="form_label essential" for="cp_name">회사명</label>
+                                    </div>
+                                    <div class="form_group field">
+                                        <input required="" placeholder="Name" class="form_field" type="input">
+                                        <label class="form_label essential" for="name">담당자명</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_flex">
+                                    <div class="form_group field tel_field">
+                                        <select id="phone_first" class="form_field tel" name="phone1">
+                                            <option value="직접입력">직접입력</option>
+                                            <option value="010">010</option>
+                                            <option value="02">02</option>
+                                            <option value="051">051</option>
+                                            <option value="053">053</option>
+                                            <option value="032">032</option>
+                                            <option value="062">062</option>
+                                            <option value="042">042</option>
+                                            <option value="052">052</option>
+                                            <option value="044">044</option>
+                                            <option value="031">031</option>
+                                            <option value="033">033</option>
+                                            <option value="043">043</option>
+                                            <option value="041">041</option>
+                                            <option value="063">063</option>
+                                            <option value="061">061</option>
+                                            <option value="054">054</option>
+                                            <option value="055">055</option>
+                                            <option value="064">064</option>
+                                        </select> -
+                                        <input required="" placeholder="Phone" class="form_field tel" type="text"
+                                            name='phone2' />-
+                                        <input required="" placeholder="Phone" class="form_field tel" type="text"
+                                            name='phone3' />
+                                        <label class="form_label essential" for="phone">연락처</label>
+                                    </div>
+                                    <div class="form_group field email_field">
+                                        <input type="text" id="email01" name="email01"
+                                            class="form_field email01"><span>@</span>
+                                        <input type="text" id="email02" name="email02" class="form_field email02">
+                                        <select id="domain" class="form_field email_choice" name="email_choice">
+                                            <option value="입력/선택">입력/선택</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="daum.net">daum.net</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+
+                                        </select>
+                                        <label class="form_label essential" for="e_mail">이메일</label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_group field full">
+                                    <textarea name="questions" rows="5" class="form_field questions"
+                                        placeholder="문의사항"></textarea>
+                                    <label class="form_label" for="e_mail">문의사항</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_group field full file_label">
+                                    <p>첨부파일</p>
+                                    <input required="" placeholder="선택된 파일이 없습니다." class="label_file" type="file"
+                                        id="file">
+                                    <label class="form_label" for="file">파일선택</label>
+                                    <div class="file_choice">
+                                        <input class="upload_name form_field" value="첨부파일" readonly>
+                                        <input type="file" class="upload_name form_field" value="첨부파일" readonly>
+                                        <label for="file">첨부파일</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pr_se_wrap">
+                            <div class="privacy_wrap">
+                                <div class="privacy_flex">
+                                    <label class="check_box">
+                                        <input type="checkbox" checked="checked" id="privacy_check">
+                                        <div class="checkmark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon"
+                                                viewBox="0 0 512 512">
+                                                <title>Checkmark</title>
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="80"
+                                                    d="M416 128L192 384l-96-96"></path>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <div class="privacy_title">
+                                        <label for="privacy_check">개인정보동의 </label> <span class="show_modal">[보기]</span>
+                                    </div>
+                                    <div class="modal_bg">
+                                        <div class="modal_box">
+                                            <div class="modal_wrap">
+                                                <div class="modal_conts">
+                                                    <div class="modal_title">
+                                                        <div class="modal_tt_input">
+                                                            <h2>
+                                                                개인정보 수집 &#183; 이용 &#183; 제공 동의서
+                                                            </h2>
+                                                            <input type="checkbox" checked="checked" id="modal_check">
+                                                            <label for="modal_check">개인정보동의</label>
+                                                        </div>
+                                                        <div class="close_btn">
+                                                            <i class="fa-solid fa-xmark"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal_conts_wrap">
+                                                        <div class="privacy_conts">
+                                                            <div>
+                                                                1. 개인정보의 처리 목적
+                                                            </div>
+                                                            <p>
+                                                                (주)로다아이티는 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는
+                                                                이용하지 않습니다.
+                                                            </p>
+                                                            <p>
+                                                                - 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본인 식별 &#183; 인증, 회원자격 유지
+                                                                &#183; 관리, 물품 또는 서비스 공급에 따른 금액 결제, 물품 또는 서비스의 공급 &#183;
+                                                                배송 등
+                                                            </p>
+                                                            <div>
+                                                                2. 개인정보의 처리 및 보유 기간
+                                                            </div>
+                                                            <p>
+                                                                ① (주)로다아이티는 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유 &#183;
+                                                                이용기간 또는 법령에 따른 개인정보 보유 &#183; 이용기간 내에서 개인정보를 처리 &#183;
+                                                                보유합니다.
+                                                            </p>
+                                                            <p>
+                                                                ② 구체적인 개인정보 처리 및 보유 기간은 다음과 같습니다.
+                                                            </p>
+                                                            <p>
+                                                                &#9658; 아래 예시를 참고하여 개인정보 처리업무와 개인정보 처리업무에 대한 보유기간 및 관련
+                                                                법령, 근거 등을 기재합니다.
+                                                            </p>
+                                                            <p>
+                                                                (예시) - 고객 가입 및 관리 : 서비스 이용계약 또는 회원가입 해지시까지, 다만 채권 &#183;
+                                                                채무관계 잔존시에는 해당 채권 &#183; 채무관계 정산시까지
+                                                            </p>
+                                                            <p>
+                                                                - 전자상거래에서의 계약 &#183; 청약철회, 대금결제, 재화 등 공급기록 : 5년
+                                                            </p>
+                                                            <div>
+                                                                3. 정보주체와 법정대리인의 권리 &#183; 의무 및 그 행사방법 이용자는 개인정보주체로써 다음과
+                                                                같은 권리를 행사할 수 있습니다.
+                                                            </div>
+                                                            <p>
+                                                                ① 정보주체는 (주)로다아이티에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수
+                                                                있습니다.
+                                                            </p>
+                                                            <p>
+                                                                1. 개인정보 열람요구
+                                                            </p>
+                                                            <p>
+                                                                2. 오류 등이 있을 경우 정정 요구
+                                                            </p>
+                                                            <p>
+                                                                3. 삭제요구
+                                                            </p>
+                                                            <p>
+                                                                4. 처리정지 요구
+                                                            </p>
+                                                            <div>
+                                                                4. 처리하는 개인정보의 항목 작성
+                                                            </div>
+                                                            <p>
+                                                                ① (주)로다아이티는 다음의 개인정보 항목을 처리하고 있습니다.
+                                                            </p>
+                                                            <p>
+                                                                1&#60;마케팅 및 서비스 제공 &#62;
+                                                            </p>
+                                                            <p>
+                                                                - 필수항목 : 휴대전화번호, 이름, 문의사항, 이메일
+                                                            </p>
+                                                            <div>
+                                                                5. 개인정보의 파기
+                                                            </div>
+                                                            <p>
+                                                                (주)로다아이티는 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다.
+                                                                파기의 절차, 기한 및 방법은 다음과 같습니다.
+                                                            </p>
+                                                            <p>
+                                                                - 파기절차
+                                                            </p>
+                                                            <p>
+                                                                이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및
+                                                                기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다.<br>
+                                                                이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.
+                                                            </p>
+                                                            <p>
+                                                                - 파기기한
+                                                            </p>
+                                                            <p>
+                                                                이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에,<br>
+                                                                개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을
+                                                                때에는<br>
+                                                                개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.
+                                                            </p>
+                                                            <div>
+                                                                6. 개인정보 자동 수집 장치의 설치•운영 및 거부에 관한 사항
+                                                            </div>
+                                                            <p>
+                                                                ① (주)로다아이티는 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는
+                                                                ‘쿠기(cookie)’를 사용합니다.
+                                                            </p>
+                                                            <p>
+                                                                ② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의
+                                                                정보이며 이용자들의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.
+                                                            </p>
+                                                            <p>
+                                                                가. 쿠키의 사용 목적 : 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기
+                                                                검색어, 보안접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.
+                                                            </p>
+                                                            <p>
+                                                                나. 쿠키의 설치•운영 및 거부 : 웹브라우저 상단의 도구>인터넷 옵션>개인정보 메뉴의 옵션 설정을
+                                                                통해 쿠키 저장을 거부 할 수 있습니다.
+                                                            </p>
+                                                            <p>
+                                                                다. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.
+                                                            </p>
+                                                            <div>
+                                                                7. 개인정보 보호책임자 작성
+                                                            </div>
+                                                            <p>
+                                                                ① (주)로다아이티는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한
+                                                                정보주체의 불만처리 및 피해구제 등을 위하여
+                                                            </p>
+                                                            <p>
+                                                                아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+                                                            </p>
+                                                            <p>
+                                                                &#9658; 개인정보 보호책임자
+                                                            </p>
+                                                            <p>
+                                                                성명 : 김민, 황은숙
+                                                            </p>
+                                                            <p>
+                                                                직책 : 이사,대표
+                                                            </p>
+                                                            <p>
+                                                                직급 : 이사,대표
+                                                            </p>
+                                                            <p>
+                                                                연락처 : 042-710-6367, rodait@rodait.com
+                                                            </p>
+                                                            <p>
+                                                                ② 정보주체께서는 (주)로다아이티의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련
+                                                                문의, 불만처리, 피해구제 등에 관한 사항을<br>
+                                                                개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다.
+                                                            </p>
+                                                            <p>
+                                                                (주)로다아이티는 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.
+                                                            </p>
+                                                            <div>
+                                                                8. 개인정보 처리방침 변경
+                                                            </div>
+                                                            <p>
+                                                                ①이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이
+                                                                있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다.
+                                                            </p>
+                                                            <div>
+                                                                9. 개인정보의 안전성 확보 조치
+                                                            </div>
+                                                            <p>
+                                                                (주)로다아이티는 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및
+                                                                물리적 조치를 하고 있습니다.
+                                                            </p>
+                                                            <p>
+                                                                1. 개인정보에 대한 접근 제한
+                                                            </p>
+                                                            <p>
+                                                                개인정보를 처리하는 데이터베이스시스템에 대한 접근권한의 부여,변경,말소를 통하여 개인정보에 대한
+                                                                접근통제를 위하여 필요한 조치를 하고 있으며<br>
+                                                                침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있습니다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="send_btn_wrap">
+                                <button class="send"></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- SECOND SECTION END -->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer_wrap">
+                <div class="md_hidden">
+                    &copy; RODAIT.All Rights Reserved
+                </div>
+                <ul>
+                    <li>
+                        <p>OFFICE</p>
+                        대전광역시 서구 배재로128<br>
+                        로다빌딩 3~4F
+                    </li>
+                    <li>
+                        <p>TEL</p>
+                        +82.042.710.6367
+                    </li>
+                    <li>
+                        <p>E-MAIL</p>
+                        rodait&#64;rodait.com
+                    </li>
+                    <li>
+                        <p>FAX</p>
+                        +82.042.367.6367
+                    </li>
+                </ul>
+                <div class="sm_block">
+                    &copy; RODAIT.All Rights Reserved
+                </div>
+        </footer>
+        <!-- FOOTER END -->
+    </main>
+</body>
+
+</html>
