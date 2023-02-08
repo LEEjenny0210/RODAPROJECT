@@ -1,0 +1,41 @@
+footer {
+    padding: 40px 0;
+    background-color: #EBEBEB;
+}
+
+footer div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer div > .ft_logo {
+    margin-right: 40px;
+}
+
+footer .ft_logo::after {
+    content: "";
+    border-right: 1px solid #C6C6C6;
+    height: 60px;
+    padding-right: 40px;
+}
+
+footer ul {
+    color: #AFAFAF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -.5px;
+}

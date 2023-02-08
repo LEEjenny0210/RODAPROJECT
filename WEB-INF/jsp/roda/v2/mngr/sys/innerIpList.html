@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Keywords" content="대전광역시, 서구, 관리자, 관리자페이지, 안전데이터, 데이터, 데이터시각화, 데이터셋, 데이터주제" />
+    <meta name="Description" content="대전광역시, 서구, 관리자, 관리자페이지, 안전데이터, 데이터, 데이터시각화, 데이터셋, 데이터주제" />
+    <meta name="Robots" content="All" />
+    <meta name="Date" content="2022-07-15+14:00" />
+    <meta http-equiv="Subject" content="대전시 서구 관리자페이지" />
+    <meta http-equiv="Title" content="대전시 서구 관리자페이지" />
+    <meta http-equiv="Author" content="JENNY" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="대전시 서구 관리자페이지">
+    <meta property="og:description" content="대전광역시, 서구, 관리자, 관리자페이지, 안전데이터, 데이터, 데이터시각화, 데이터셋, 데이터주제">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>대전시 관리자 페이지</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/header.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/setting.css">
+
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="menu_logo">
+                <a href="#">
+                    <img src="../../../../../../images/v2/logo.png" alt="대전광역시 로고">
+                </a>
+            </div>
+            <nav class="nav_bar">
+                <ul class="menu_01">
+                    <li class="nav_item">
+                        <p class="nav_txt">콘텐츠</p>
+                        <ul class="menu_02">
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    데이터
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../dataset/datasetManaList.html">
+                                            - 데이터 셋 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    카테고리
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../dataset/datasetThemaList.html">
+                                            - 데이터 주제 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    게시판
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../dataset/datasetAuthList.html">
+                                            - 게시물 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">현황/로그</p>
+                        <ul class="menu_02">
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    현황
+                                </a>
+                                <ul href="#" class="sub_txt sub_mg">
+                                    <li>
+                                        <a href="../stat/statDataDwnHist.html">
+                                            - 데이터 다운로드 현황
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../stat/statConnHist.html">
+                                            - 접속자 현황
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">운영</p>
+                        <ul class="menu_02">
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    회원
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../account/accountList.html">
+                                            - 관리자 계정 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    시스템
+                                </a>
+                                <ul class="sub_txt sub_mg">
+                                    <li>
+                                        <a href="../sys/menuList.html">
+                                            - 메뉴관리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sys/codeList.html">
+                                            - 공통코드 관리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sys/innerIpList.html">
+                                            - 내부 아이피 관리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sys/mainStatList.html">
+                                            - 메인통계관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- --------------------------- header section::end --------------------------->
+        <section>
+            <div class="section_wrap">
+                <div class="header">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../../../../../..//images/v2/home.png" alt="홈으로">
+                                홈으로
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../../../../..//images/v2/logout.png" alt="로그아웃">
+                                로그아웃
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_contents">
+                    <div class="contents_wrap">
+                        <div class="contents_title">
+                            <h2>
+                                내부 아이피 관리
+                            </h2>
+                            <ul>
+                                <li>
+                                    관리자
+                                </li>
+                                <li>
+                                    <img src="../../../../../..//images/v2/arrow_right.png" alt=">">
+                                </li>
+                                <li>
+                                    운영
+                                </li>
+                                <li>
+                                    <img src="../../../../../..//images/v2/arrow_right.png" alt=">">
+                                </li>
+                                <li>
+                                    내부아이피 관리
+                                    <img src="../../../../../..//images/v2/arrow_bottom.png" alt="화살표">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search_box">
+                            <div class="search_wrap statistisc">
+                                <ul class="integrate_search account">
+                                    <li>
+                                        사용여부
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <select name="status_search" id="status_search">
+                                                <option value="전체">전체</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="integrate_search situation">
+                                    <li>
+                                        통합검색
+                                    </li>
+                                    <li>
+                                        <input type="text" placeholder="검색어">
+                                    </li>
+                                    <li>
+                                        <button class="search">
+                                            검색
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="board_box">
+                            <table class="table_title">
+                                <colgroup>
+                                    <col width="50%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="10%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <p>
+                                                아이피(대역)
+                                            </p>
+                                        </th>
+                                        <th>
+                                            <p>
+                                                부서명
+                                            </p>
+                                        </th>
+                                        <th>
+                                            <p>
+                                                대역
+                                            </p>
+                                        </th>
+                                        <th>
+                                            <p>
+                                                사용여부
+                                            </p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="table_box list_table">
+                                <table>
+                                    <colgroup>
+                                        <col width="50%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="10%">
+                                    </colgroup>
+                                    <tbody class="account_list">
+                                        <tr>
+                                            <td>
+                                                <div class="ip_input input_wrap">
+                                                    <input type="text">
+                                                    -
+                                                    <input type="text">
+                                                    -
+                                                    <input type="text">
+                                                    -
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <select name="accout" id="account">
+                                                        <option value="사용">사용</option>
+                                                        <option value="미사용">미사용</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="ip_input input_wrap">
+                                                    <input type="text">
+                                                    -
+                                                    <input type="text">
+                                                    -
+                                                    <input type="text">
+                                                    -
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <select name="accout" id="account">
+                                                        <option value="사용">사용</option>
+                                                        <option value="미사용">미사용</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="paging_box paging_01">
+                            <div class="paging paging_dd_left">
+                                <button></button>
+                            </div>
+                            <div class="paging paging_left">
+                                <button></button>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#" class="active">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        5
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="paging pagingd_right">
+                                <button></button>
+                            </div>
+                            <div class="paging paging_dd_right">
+                                <button></button>
+                            </div>
+                        </div>
+                        <div class="paging_button_box">
+                            <button class="storage">저장</button>
+                            <button class="add">추가</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer::start -->
+                <footer>
+                    <div>
+                        <div class="ft_logo logo">
+                            <img src="../../../../../../images/v2/f_logo.png" alt="대전광역시 서구 푸터 로고">
+                        </div>
+                        <ul>
+                            <li>
+                                (우)35238 대전광역시 서구 둔산서로 100(둔산동)
+                            </li>
+                            <li>
+                                대표전화 : 042)288-2114 / 팩스 : 042)288-5900
+                            </li>
+                            <li>
+                                Copyright &copy; 2014 Seo-gu Office. All rights reserved.
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+                <!-- footer::end -->
+            </div>
+        </section>
+    </main>
+    <!-- main::end -->
+
+</body>
+
+<!-- js -->
+<script src="../../../../../../js/v2/main.js"></script>
+
+</html>

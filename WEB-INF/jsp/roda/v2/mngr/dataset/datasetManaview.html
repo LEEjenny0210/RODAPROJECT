@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="대전광역시, 서구, 관리자, 관리자페이지, 안전데이터, 데이터, 데이터시각화, 데이터셋, 데이터주제" />
+    <meta name="Description" content="대전광역시, 서구, 관리자, 관리자페이지, 안전데이터, 데이터, 데이터시각화, 데이터셋, 데이터주제" />
+    <meta name="Robots" content="All" />
+    <meta name="Date" content="2022-07-15+14:00" />
+    <meta http-equiv="Subject" content="대전시 서구 관리자페이지" />
+    <meta http-equiv="Title" content="대전시 서구 관리자페이지" />
+    <meta http-equiv="Author" content="JENNY" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="대전시 서구 관리자페이지">
+    <meta property="og:description" content="대전광역시, 서구, 관리자, 관리자페이지, 안전데이터, 데이터, 데이터시각화, 데이터셋, 데이터주제">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>대전시 관리자 페이지</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/header.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../css/v2/setting.css">
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="menu_logo">
+                <a href="#">
+                    <img src="../../../../../../images/v2/logo.png" alt="대전광역시 로고">
+                </a>
+            </div>
+            <nav class="nav_bar">
+                <ul class="menu_01">
+                    <li class="nav_item">
+                        <p class="nav_txt">콘텐츠</p>
+                        <ul class="menu_02">
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    데이터
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../dataset/datasetManaList.html">
+                                            - 데이터 셋 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    카테고리
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../dataset/datasetThemaList.html">
+                                            - 데이터 주제 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    게시판
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../dataset/datasetAuthList.html">
+                                            - 게시물 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">현황/로그</p>
+                        <ul class="menu_02">
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    현황
+                                </a>
+                                <ul href="#" class="sub_txt sub_mg">
+                                    <li>
+                                        <a href="../stat/statDataDwnHist.html">
+                                            - 데이터 다운로드 현황
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../stat/statConnHist.html">
+                                            - 접속자 현황
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <p class="nav_txt">운영</p>
+                        <ul class="menu_02">
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    회원
+                                </a>
+                                <ul class="sub_txt">
+                                    <li>
+                                        <a href="../account/accountList.html">
+                                            - 관리자 계정 관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub_item">
+                                <a href="#" class="sub_title">
+                                    시스템
+                                </a>
+                                <ul class="sub_txt sub_mg">
+                                    <li>
+                                        <a href="../sys/menuList.html">
+                                            - 메뉴관리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sys/codeList.html">
+                                            - 공통코드 관리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sys/innerIpList.html">
+                                            - 내부 아이피 관리
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../sys/mainStatList.html">
+                                            - 메인통계관리
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- --------------------------- header section::end --------------------------->
+        <section>
+            <div class="section_wrap">
+                <div class="header">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../../../../../../images/v2/home.png" alt="홈으로">
+                                홈으로
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../../../../../images/v2/logout.png" alt="로그아웃">
+                                로그아웃
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_contents">
+                    <div class="contents_wrap">
+                        <div class="contents_title">
+                            <h2>
+                                데이터셋 관리 상세
+                            </h2>
+                            <ul>
+                                <li>
+                                    관리자
+                                </li>
+                                <li>
+                                    <img src="../../../../../../images/v2/arrow_right.png" alt=">">
+                                </li>
+                                <li>
+                                    콘텐츠
+                                </li>
+                                <li>
+                                    <img src="../../../../../../images/v2/arrow_right.png" alt=">">
+                                </li>
+                                <li>
+                                    데이터셋 관리 상세
+                                    <img src="../../../../../../images/v2/arrow_bottom.png" alt="화살표">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contents">
+                            <h2>
+                                데이터정보
+                            </h2>
+                            <ul>
+                                <li>
+                                    <h3>데이터정보</h3>
+                                    <div class="input_box input_wrap">
+                                        <input type="text" placeholder="데이터정보를 입력하세요">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>서비스명</h3>
+                                    <div class="input_box input_wrap">
+                                        <input type="text">
+                                    </div>
+                                </li>
+                                <li class="li_flex">
+                                    <div>
+                                        <h3>데이터 관리</h3>
+                                        <div class="input_box input_wrap">
+                                            <input type="text" placeholder="작성자 입력">
+                                            <div class="file_cont">
+                                                <p>tn_cctv_parkng_reglt</p>
+                                                <div>
+                                                    <button class="choice">파일선택</button>
+                                                </div>
+                                                <div>
+                                                    <button class="send">전송</button>
+                                                </div>
+                                                <div>
+                                                    <button class="template">template</button>
+                                                </div>
+                                            </div>
+                                            <div class="file_cont">
+                                                <p>tn_cctv_parkng_reglt</p>
+                                                <div>
+                                                    <button class="choice">파일선택</button>
+                                                </div>
+                                                <div>
+                                                    <button class="send">전송</button>
+                                                </div>
+                                                <div>
+                                                    <button class="template">template</button>
+                                                </div>
+                                            </div>
+                                            <div class="file_cont">
+                                                <p>tn_cctv_parkng_reglt</p>
+                                                <div>
+                                                    <button class="choice">파일선택</button>
+                                                </div>
+                                                <div>
+                                                    <button class="send">전송</button>
+                                                </div>
+                                                <div>
+                                                    <button class="template">template</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>데이터 관리 여부</h3>
+                                        <div class="select_box_center">
+                                            <select name="whether" id="whether">
+                                                <option value="없음">없음</option>
+                                                <option value="있음">있음</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_flex">
+                                    <div>
+                                        <h3>데이터 갱신주기</h3>
+                                        <div class="select_box_center">
+                                            <select name="year" id="year">
+                                                <option value="년">년</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>주제</h3>
+                                        <div class="select_box_center">
+                                            <select name="topic" id="topic">
+                                                <option value="없음">없음</option>
+                                                <option value="있음">있음</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_flex">
+                                    <div>
+                                        <h3>출처</h3>
+                                        <div class="input_box input_wrap">
+                                            <input type="text" placeholder="출처를 입력하세요">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>제공기관</h3>
+                                        <div class="input_box input_wrap">
+                                            <input type="text" placeholder="제공기관을 입력하세요">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_flex">
+                                    <div>
+                                        <h3>데이터 갱신일</h3>
+                                        <div class="input_box input_wrap input_calender">
+                                            <input type="text">
+                                            <button>
+                                                <img src="../../../../../../images/v2/calendar.png" alt="달력">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>공공누리 유형</h3>
+                                        <div class="select_box_center">
+                                            <select name="type" id="type">
+                                                <option value="사용">사용</option>
+                                                <option value="미사용">미사용</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="li_flex">
+                                    <div>
+                                        <h3>키워드</h3>
+                                        <div class="input_box input_wrap">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="keyword_box">
+                                        <div>
+                                            <div class="keyword_btn">
+                                                cctv
+                                                <button>
+                                                    <img src="../../../../../../images/v2/cancle_keyword.png" alt="취소">
+                                                </button>
+                                            </div>
+                                            </di>
+                                        </div>
+                                        <div class="keyword_box">
+                                            <div>
+                                                <div class="keyword_btn">
+                                                    주차단속
+                                                    <button>
+                                                        <img src="../../../../../../images/v2/cancle_keyword.png"
+                                                            alt="취소">
+                                                    </button>
+                                                </div>
+                                                </di>
+                                            </div>
+                                            <div class="keyword_box">
+                                                <div>
+                                                    <div class="keyword_btn">
+                                                        주차
+                                                        <button>
+                                                            <img src="../../../../../../images/v2/cancle_keyword.png"
+                                                                alt="취소">
+                                                        </button>
+                                                    </div>
+                                                    </di>
+                                                </div>
+                                                <div class="keyword_box">
+                                                    <div>
+                                                        <div class="keyword_btn">
+                                                            단속
+                                                            <button>
+                                                                <img src="../../../../../../images/v2/cancle_keyword.png"
+                                                                    alt="취소">
+                                                            </button>
+                                                        </div>
+                                                        </di>
+                                                    </div>
+                                                    <div class="keyword_box">
+                                                        <div>
+                                                            <div class="keyword_btn">
+                                                                서구
+                                                                <button>
+                                                                    <img src="../../../../../../images/v2/cancle_keyword.png"
+                                                                        alt="취소">
+                                                                </button>
+                                                            </div>
+                                                            </di>
+                                                        </div>
+                                                        <div class="keyword_box">
+                                                            <div>
+                                                                <div class="keyword_btn">
+                                                                    대전
+                                                                    <button>
+                                                                        <img src="../../../../../../images/v2/cancle_keyword.png"
+                                                                            alt="취소">
+                                                                    </button>
+                                                                </div>
+                                                                </di>
+                                                            </div>
+                                </li>
+                                <li>
+                                    <h3>데이터 셋 설명</h3>
+                                    <div class="textarea_box data_set_textarea">
+                                        <textarea name="contents" id="conts"></textarea>
+                                    </div>
+                                </li>
+                                <li class="li_flex">
+                                    <div>
+                                        <h3>제공방법</h3>
+                                        <div class="input_box delivery_wrap">
+                                            <div>
+                                                <input type="checkbox" id="file">
+                                                <label for="file">파일</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="api">
+                                                <label for="api">오픈API</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- ------------------------------------데이터정보::end------------------------------------->
+                            <h2>파일</h2>
+                            <ul>
+                                <li>
+                                    <h3>첨부파일</h3>
+                                    <div class="file_choice_wrap">
+                                        <div class="file_choice_select">
+                                            <select name="delivery_type" id="delivery_type">
+                                                <option value="제공유형선택">제공유형선택</option>
+                                            </select>
+                                            <div class="file_box file_choice">
+                                                <input type="file" id="file_choice">
+                                                <label for="file_choice">
+                                                    <img src="../../../../../../images/v2/file.png" alt="파일 선택"> 파일 선택
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="file_list choice_list">
+                                            <div>
+                                                <p>대전광역시 서구 CCTV(주차단속)현황.XLSX</p>
+                                                <div class="choice_file_ck">
+                                                    <input type="checkbox" id="file_cancel">
+                                                    <label for="file_cancel">삭제</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- ------------------------------------파일::end------------------------------------->
+                            <h2>
+                                Api 기본정보
+                            </h2>
+                            <ul>
+                                <li>
+                                    <h3>응답유형</h3>
+                                    <div class="radio_box">
+                                        <input type="radio" name="response" value="json" id="json">
+                                        <label for="json">json</label>
+                                        <input type="radio" name="response" value="xml" id="xml">
+                                        <label for="xml">xml</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>페이징 사용유무</h3>
+                                    <div class="radio_box">
+                                        <input type="radio" name="notice" value="notice01" id="notice01">
+                                        <label for="notice01">사용</label>
+                                        <input type="radio" name="notice" value="notice02" id="notice02">
+                                        <label for="notice02">사용안함</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>첨부파일</h3>
+                                    <div class="file_choice_wrap">
+                                        <div class="file_box file_choice">
+                                            <input type="file" id="file_choice">
+                                            <label for="file_choice">
+                                                <img src="../../../../../../images/v2/file.png" alt="파일 선택"> 파일 선택
+                                            </label>
+                                        </div>
+                                        <div class="file_list choice_list">
+                                            <div>
+                                                <p>대전광역시 서구 CCTV(주차단속)현황.XLSX</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- ------------------------------------API 기본정보::end------------------------------------->
+                            <div class="popUp_btn_box">
+                                <h2>
+                                    응답변수(Respnese Parameter)
+                                </h2>
+                                <div>
+                                    <button class="popUp_btn">
+                                        응답변수 반자동 설정
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="table_scroll">
+                                <table class="dataset_table">
+                                    <colgroup>
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                        <col width="12.5%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <p>항목명(영문)</p>
+                                            </th>
+                                            <th>
+                                                <p>항목명(국문)</p>
+                                            </th>
+                                            <th>
+                                                <p>데이터 타입</p>
+                                            </th>
+                                            <th>
+                                                <p>항목크기</p>
+                                            </th>
+                                            <th>
+                                                <p>항목설명</p>
+                                            </th>
+                                            <th>
+                                                <p>예시 데이터</p>
+                                            </th>
+                                            <th>
+                                                <p>제공여부</p>
+                                            </th>
+                                            <th>
+                                                <p>관리</p>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <select name="provision" id="provision">
+                                                        <option value="예">예</option>
+                                                        <option value="아니오">아니오</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <button class="table_add">추가</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <select name="provision" id="provision">
+                                                        <option value="예">예</option>
+                                                        <option value="아니오">아니오</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <button class="table_elimination">추가</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ------------------------------------응답변수::end------------------------------------->
+                        </div>
+                        <div class="button_box">
+                            <button class="elimination">삭제</button>
+                            <button class="cancel">취소</button>
+                            <button class="storage">저장</button>
+                        </div>
+                    </div>
+                    <div class="popUp">
+                        <div class="popUp_box">
+                            <div class="popUp_conts">
+                                <!-- -----------------tap btn::start------------------->
+                                <ul class="tap_btn">
+                                    <li id="popUp_tap_01">
+                                        <button class="tap_active">
+                                            DB조회
+                                            <span></span>
+                                        </button>
+                                    </li>
+                                    <li id="popUp_tap_02">
+                                        <button>
+                                            쿼리입력
+                                            <span></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <!-- -----------------tap btn::end------------------->
+                                <!-- -----------------DB조회::start------------------->
+                                <div id="popUp_01">
+                                    <!-- ------------table select box::start---------- -->
+                                    <div class="table_select_box">
+                                        <select name="table_select" id="table_select">
+                                            <option value="테이블 선택">테이블 선택</option>
+                                        </select>
+                                    </div>
+                                    <!-- ------------table select box::end---------- -->
+                                    <!--- ------------- table::start--------------- --->
+                                    <table class="table_title">
+                                        <colgroup>
+                                            <col width="10%">
+                                            <col width="22.5%">
+                                            <col width="22.5%">
+                                            <col width="22.5%">
+                                            <col width="22.5%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <p>
+                                                        선택
+                                                    </p>
+                                                </th>
+                                                <th>
+                                                    <p>
+                                                        항목명(영문)
+                                                    </p>
+                                                </th>
+                                                <th>
+                                                    <p>
+                                                        항목명(국문)
+                                                    </p>
+                                                </th>
+                                                <th>
+                                                    <p>
+                                                        데이터형태
+                                                    </p>
+                                                </th>
+                                                <th>
+                                                    <p>
+                                                        항목크기
+                                                    </p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                    <div class="table_box tap_table">
+                                        <table>
+                                            <colgroup>
+                                                <col width="10%">
+                                                <col width="22.5%">
+                                                <col width="22.5%">
+                                                <col width="22.5%">
+                                                <col width="22.5%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" name="check" value="ckecking"
+                                                                class="checking" checked>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            sn
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            순번
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            int
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            10
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" name="check" value="ckecking"
+                                                                class="checking">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            In니_instt_nm
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            설치기관명
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            Varchar
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            50
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" name="check" value="ckecking"
+                                                                class="checking">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            itlpc
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            설치위치
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            Varchar
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            100
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" name="check" value="ckecking"
+                                                                class="checking">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            instl_instt_adres
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            설치기관주소
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            Varchar
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            120
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" name="check" value="ckecking"
+                                                                class="checking">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            itlpc
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            설치위치
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            Varchar
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            100
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--- ------------- table::end----------------- --->
+                                <!-- -----------------DB조회::end------------------->
+                                <!-- -----------------쿼리입력::start------------------->
+                                <div id="popUp_02">
+                                    <textarea name="query" id="query"></textarea>
+                                </div>
+                                <!-- -----------------쿼리입력::end------------------->
+                                <div class="popUp_bottom_btn">
+                                    <div>
+                                        <button class="application">적용</button>
+                                    </div>
+                                    <div>
+                                        <button class="cancel">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------- contents::end --------------------------->
+
+                <footer>
+                    <div>
+                        <div class="ft_logo logo">
+                            <img src="../../../../../../images/v2/f_logo.png" alt="대전광역시 서구 푸터 로고">
+                        </div>
+                        <ul>
+                            <li>
+                                (우)35238 대전광역시 서구 둔산서로 100(둔산동)
+                            </li>
+                            <li>
+                                대표전화 : 042)288-2114 / 팩스 : 042)288-5900
+                            </li>
+                            <li>
+                                Copyright &copy; 2014 Seo-gu Office. All rights reserved.
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+                <!--------------------------- footer::end --------------------------->
+            </div>
+        </section>
+    </main>
+    <!-- main::end -->
+</body>
+
+<!-- js -->
+<script src="../../../../../../js/v2/main.js"></script>
+
+</html>
