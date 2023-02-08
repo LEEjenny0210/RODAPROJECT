@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/roda/css/fonts/Pretendard-Thin.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-Thin.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 200;
+    src: url(/roda/css/fonts/Pretendard-ExtraLight.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-ExtraLight.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-ExtraLight.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/roda/css/fonts/Pretendard-Light.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-Light.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/roda/css/fonts/Pretendard-Regular.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-Regular.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/roda/css/fonts/Pretendard-Medium.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-Medium.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 600;
+    src: url(/roda/css/fonts/Pretendard-SemiBold.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-SemiBold.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-SemiBold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/roda/css/fonts/Pretendard-Bold.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-Bold.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 800;
+    src: url(/roda/css/fonts/Pretendard-ExtraBold.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-ExtraBold.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-ExtraBold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/roda/css/fonts/Pretendard-Black.woff2) format('woff2'),
+        url(/roda/css/fonts/Pretendard-Black.woff) format('woff'),
+        url(/roda/css/fonts/Pretendard-Black.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/roda/css/fonts/montserrat-v23-latin-100.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-100.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-100.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-100.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-100.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: url(/roda/css/fonts/montserrat-v23-latin-200.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-200.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-200.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-200.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-200.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/roda/css/fonts/montserrat-v23-latin-300.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-300.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-300.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-300.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-300.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/roda/css/fonts/montserrat-v23-latin-regular.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-regular.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-regular.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-regular.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-regular.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/roda/css/fonts/montserrat-v23-latin-500.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-500.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-500.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-500.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-500.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url(/roda/css/fonts/montserrat-v23-latin-600.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-600.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-600.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-600.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-600.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/roda/css/fonts/montserrat-v23-latin-700.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-700.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-700.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-700.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-700.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url(/roda/css/fonts/montserrat-v23-latin-800.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-800.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-800.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-800.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-800.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/roda/css/fonts/montserrat-v23-latin-900.woff2) format('woff2'),
+        url(/roda/css/fonts/montserrat-v23-latin-900.woff) format('woff'),
+        url(/roda/css/fonts/montserrat-v23-latin-900.ttf) format('truetype'),
+        url(/roda/css/fonts/montserrat-v23-latin-900.svg) format('svg'),
+        url(/roda/css/fonts/montserrat-v23-latin-900.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/roda/css/fonts/GmarketSansLight.woff2) format('woff2'),
+        url(/roda/css/fonts/GmarketSansLight.woff) format('woff'),
+        url(/roda/css/fonts/GmarketSansLight.ttf) format('truetype'),
+        url(/roda/css/fonts/GmarketSansLight.otf) format('opentype'),
+        url(/roda/css/fonts/GmarketSansLight.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/roda/css/fonts/GmarketSansMedium.woff2) format('woff2'),
+        url(/roda/css/fonts/GmarketSansMedium.woff) format('woff'),
+        url(/roda/css/fonts/GmarketSansMedium.ttf) format('truetype'),
+        url(/roda/css/fonts/GmarketSansMedium.otf) format('opentype'),
+        url(/roda/css/fonts/GmarketSansMedium.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight: 600;
+    src: url(/roda/css/fonts/GmarketSansBold.woff2) format('woff2'),
+        url(/roda/css/fonts/GmarketSansBold.woff) format('woff'),
+        url(/roda/css/fonts/GmarketSansBold.ttf) format('truetype'),
+        url(/roda/css/fonts/GmarketSansBold.otf) format('opentype'),
+        url(/roda/css/fonts/GmarketSansBold.eot) format('embedded-opentype');
+}

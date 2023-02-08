@@ -1,0 +1,80 @@
+/* css 리셋 */
+@charset "utf-8";
+/*
+ * default style definition
+ */
+body {
+	margin: 0;
+	padding: 0;
+	font-size:  12px;
+	line-height: 1.4;
+	background-color: #f8f8f8;
+	font-weight: 400;
+	font-family:'Montserrat' ,'Noto Sans KR',  'NanumSquare' , 'Dotum', 'Nanum Gothic', 'sans-serif';
+}
+form, h1, h2, h3, h4, h5, h6,p, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+hr {
+	display: none;
+}
+em,p, div, th, td, select, input {
+	color: #555555;
+	font-style: normal;
+}
+a:link, a:visited {
+	color: #555555;
+	text-decoration: none;
+}
+
+a img, 
+input.type-image {
+	border: 0 none;
+}
+input.type-text, 
+textarea {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 5px;
+}
+
+input, select, textarea {
+	vertical-align: middle;
+	font-size: 12px;
+	color: #555555;
+	outline: none;
+	resize: none;
+}
+ul, li, ol { list-style: none; margin: 0; padding: 0; }
+
+select {
+	font-size: 12px;
+	font-family: 'Noto Sans KR',  'NanumSquare' , 'Dotum', 'Nanum Gothic', 'sans-serif';
+}
+
+span.button, 
+img.button, 
+a.button {
+	cursor: pointer;
+	vertical-align: middle;
+}
+fieldset { border: none; margin: 0; padding: 0; }
+legend { display: none; padding: 0; }
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+* { box-sizing: border-box; }
+
+/* 태그 스타일 */

@@ -1,0 +1,188 @@
+/* main section::start */
+section {
+    height: 100vh;
+    width: 100%;
+    padding: 120px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("/img/login_bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: #F4F5F7;
+}
+
+/* logo::start */
+
+.logo_box {
+    background-image: url("/img/logo.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 337px;
+    height: 39px;
+    margin: 0 auto;
+}
+
+/* logo::end */
+
+/* login::start */
+.login_box {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    width: 550px;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login_text {
+    padding: 30px 60px;
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.login_text h2 {
+    color: #00A33E;
+    font-size: 2.188rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.login_text p {
+    margin-top: 32px;
+    color: #66645D;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.login_text #id {
+    display: block;
+    margin-top: 16px;
+    width: 100%;
+    padding: 18px 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #dbdde4;
+}
+
+.login_text #id::-webkit-input-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #id:-moz-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #id::-moz-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #id:-ms-input-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #id::-ms-input-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #id::placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #password {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+    padding: 18px 20px;
+    background-color: #F5F5F5;
+    border: 1px solid #dbdde4;
+}
+
+.login_text #password::-webkit-input-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #password:-moz-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #password::-moz-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #password:-ms-input-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #password::-ms-input-placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text #password::placeholder {
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    color: #858585;
+}
+
+.login_text .login_button {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.login_text .login_button button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.938rem;
+    letter-spacing: -.5px;
+    padding: 20px 0;
+    background-color: #00A33E;
+}
+
+.login_text .login_button button:hover {
+    background-color: #005e24;
+}
+
+
+/* login::end */
+
+
+
+
